@@ -1,6 +1,6 @@
 cask "zeff-boy" do
-  version "0.1.3"
-  sha256 "0e02a6c53e0842d05540bd60155eab86863561ce3ed392e229df47a9c0e14dc7"
+  version "0.2.0"
+  sha256 "214067d62a2b58110d9af3093c6fb3b7612cf91d72fbc1699873b2ebe67cba84"
 
   url "https://github.com/Zeffuro/zeff-boy/releases/download/v#{version}/zeff-boy-v#{version}-aarch64-apple-darwin.tar.gz"
   name "zeff-boy"
