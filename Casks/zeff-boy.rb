@@ -1,13 +1,15 @@
 cask "zeff-boy" do
-  version "0.2.0"
-  sha256 "214067d62a2b58110d9af3093c6fb3b7612cf91d72fbc1699873b2ebe67cba84"
+  version "0.3.0"
+  sha256 "3b44a252aa0215d1e2947be46eb901a8f514d49356fe8f88d39d3f0898d79aec"
 
-  url "https://github.com/Zeffuro/zeff-boy/releases/download/v#{version}/zeff-boy-v#{version}-aarch64-apple-darwin.tar.gz"
+  url "https://github.com/Zeffuro/zeff-boy/releases/download/v#{version}/zeff-boy-v#{version}-aarch64-apple-darwin.dmg"
   name "zeff-boy"
   desc "A Game Boy, Game Boy Color, and NES emulator written in Rust"
   homepage "https://github.com/Zeffuro/zeff-boy"
 
-  binary "zeff-boy"
+  depends_on arch: :arm64
+
+  app "Zeff Boy.app"
 
   livecheck do
     url :url
